@@ -20,7 +20,7 @@ using namespace std;
 #define pl pair<ll, ll>
 #define all(a) begin(a), end(a)
 #define maxEl(a) *max_element(all(a))
-#define minEl(a) *max_element(all(a))
+#define minEl(a) *min_element(all(a))
 #define uimap unordered_map<int,int>
 #define ulmap unordered_map<ll, ll>
 #define mppii map< pi, int>
