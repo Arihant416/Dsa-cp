@@ -27,7 +27,7 @@ using namespace std;
 
 bool isPowerOf2(ll N)
 {
-    return !(N & (N - 1));
+    return !(N & (N - 1)) && N;
 }
 int32_t main()
 {
