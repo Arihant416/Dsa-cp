@@ -34,7 +34,7 @@ bool mySortFunction(const pi &i, const pi &j)
 
 double findMaximumLoot(vi &value, vi &weight, int maxCapacity, int N)
 {
-    double result = 0;
+    double result = 0.0;
     vector<pi> A;
     for (int i = 0; i < N; i++)
     {
@@ -53,6 +53,7 @@ double findMaximumLoot(vi &value, vi &weight, int maxCapacity, int N)
         {
             int left = maxCapacity - curWeight;
             result += i.first * ((double)left / (double)i.second);
+            break;
         }
     }
     return result;
