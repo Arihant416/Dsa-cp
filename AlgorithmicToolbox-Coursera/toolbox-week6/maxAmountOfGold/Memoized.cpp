@@ -30,7 +30,7 @@ int findMaxAmount(vi &weight, int N, int W)
 {
     if (N == 0 || W == 0)
         return 0;
-    if (dp[N - 1][W] != INT_MIN)
+    if (dp[N][W] != INT_MIN)
     {
         return dp[N][W];
     }
