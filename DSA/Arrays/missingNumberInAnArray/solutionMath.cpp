@@ -38,6 +38,12 @@ int findMissingNumber(vi &A, int N)
     }
     return number;
 }
+int findMissingNumberMath(vi &A, int N)
+{
+    long sum = N * (N + 1) / 2;
+    long acc = accumulate(all(A), 0);
+    return sum - acc;
+}
 
 int32_t main()
 {
@@ -48,5 +54,6 @@ int32_t main()
     for (int &i : A)
         cin >> i;
     cout << findMissingNumber(A, N) << endl;
+    cout << findMissingNumberMath(A, N) << endl;
     return 0;
 }
